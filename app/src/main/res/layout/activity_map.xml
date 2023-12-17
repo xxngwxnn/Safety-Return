@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/showMarkersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CCTV 표시"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffc0cb"/>
+
+    <Button
+        android:id="@+id/zoomInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="( + )"
+        android:layout_above="@id/showMarkersButton"
+        android:layout_toLeftOf="@id/showMarkersButton"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ffc0cb"/>
+
+    <Button
+        android:id="@+id/zoomOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="( - )"
+        android:layout_above="@id/showMarkersButton"
+        android:layout_toRightOf="@id/showMarkersButton"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ffc0cb"/>
+
+    <Button
+        android:id="@+id/gpsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/zoomInButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-48dp"
+        android:background="#ffc0cb"
+        android:text="GPS" />
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/loginStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:text="로그인 상태"
+        android:layout_marginEnd="25dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="로그인 상태에서만 기능을 사용하실 수 있습니다."
+        android:background="#d3d3d3"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/moveToBoardButton"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="여름치 안전 귀가 앱"
+        android:background="#d3d3d3"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/moveToBoardButton"/>
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="25dp"
+        android:text="회원 가입"
+        android:background="#ffc0cb"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_toStartOf="@id/signUpButton"
+        android:text="로그인"
+        android:background="#ffc0cb"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/logoutButton"
+        android:text="회원 정보 수정"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="16dp"
+        android:background="#ffc0cb"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_alignParentEnd="true"
+        android:text="로그아웃"
+        android:layout_marginTop="16dp"
+        android:background="#ffc0cb"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/moveToMapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="지도로 이동"
+        android:background="#ffc0cb"/>
+
+    <Button
+        android:id="@+id/moveToTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="타이머로 이동"
+        android:layout_below="@id/moveToMapButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffc0cb"/>
+
+    <Button
+        android:id="@+id/moveToBoardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게시판으로 이동"
+        android:layout_below="@id/moveToTimerButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#ffc0cb"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ad" />
+</RelativeLayout>

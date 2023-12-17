@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/loginTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginTitleTextView"
+        android:layout_marginTop="16dp"
+        android:hint="아이디"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editUsername"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:hint="비밀번호"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:layout_below="@id/editPassword"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffc0cb"/>
+    <Button
+        android:id="@+id/idfindButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 찾기"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="findUsername"
+        android:background="#ffc0cb"/>
+
+    <Button
+        android:id="@+id/pwfindButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 찾기"
+        android:layout_below="@id/idfindButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="findPassword"
+        android:background="#ffc0cb"/>
+
+</RelativeLayout>

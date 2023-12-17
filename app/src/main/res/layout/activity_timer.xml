@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/timerHourEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="시간"
+        android:inputType="number"
+        android:maxLength="2"/>
+
+    <EditText
+        android:id="@+id/timerMinuteEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/timerHourEditText"
+        android:layout_marginStart="16dp"
+        android:hint="분"
+        android:inputType="number"
+        android:maxLength="2" />
+
+    <EditText
+        android:id="@+id/timerSecondEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/timerMinuteEditText"
+        android:layout_marginStart="16dp"
+        android:hint="초"
+        android:inputType="number"
+        android:maxLength="2" />
+
+    <Button
+        android:id="@+id/startTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerMinuteEditText"
+        android:layout_marginTop="20dp"
+        android:background="#ffc0cb"
+        android:text="타이머 시작" />
+
+    <Button
+        android:id="@+id/stopTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerMinuteEditText"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/startTimerButton"
+        android:background="#ffc0cb"
+        android:text="타이머 중지" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남은 시간: --:--:--"
+        android:textSize="18sp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
