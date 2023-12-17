@@ -1,6 +1,6 @@
 # 여름치 안전귀가앱 Safety Return
 
-# 🎞️🎞Project Introduction
+# 🎞️Project Introduction
  - 흉흉한 사건이 계속되는 가운데 전국 곳곳에서 살인예고 글로 인해 많은 국민이 불안에 떨고 있다. 따라서, 프로젝트 “안심 귀가 앱” 이 국민들의 불안을 해소하는데 조금이라도 도움이 되기를 기대하며 프로젝트 제작에 노력을 기울이고자 한다. 
 
 # 📆Project Period
